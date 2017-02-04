@@ -12,7 +12,7 @@ var {authenticate} = require('./middleware/authenticate');
 
 var app = express();
 const port = process.env.PORT;
-
+console.log('test');
 app.use(bodyParser.json());
 
 app.post('/todos', authenticate, (req, res) => {
